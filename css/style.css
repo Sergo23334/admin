@@ -1,0 +1,94 @@
+*{
+	outline: none;
+}
+
+body {
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+}
+
+#signBox {
+	float: left;
+	margin-top: 200px;
+	width: calc(36% - 106px);
+	margin-left: 32%;
+	border: 3px solid gray;
+	border-radius: 7px;
+	text-align: right;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+#signBox h1 {
+	font-family: monospace;
+	color: red;
+	font-size: 31px;
+}
+
+#signBox form label {
+	float: left;
+	color: rgb(60, 60, 60);
+	font-size: 24px;
+	font-family: sans-serif;
+}
+
+#signBox form input {
+	margin-bottom: 10px;
+}
+
+#signBox form .text {
+	width: 150px;
+	padding: 2px;
+	border: 2px solid gray;
+	border-radius: 5px;
+	color: rgb(70 , 70, 70);
+	font-size: 20px;
+}
+
+#signBox form .text:focus {
+	border: 2px solid rgb(255, 100, 100);
+}
+
+#signBox form .submit {
+	color: white;
+	background-color: rgb(30, 30, 30);
+	border: none;
+	border-radius: 7px;
+	padding: 7px;
+	cursor: pointer;
+	transition: 0.8s;
+}
+
+#signBox form .submit:hover {
+	background-color: rgb(90, 90, 90);
+}
+
+#error {
+	text-align: center;
+	width: 100%;
+	color: red;
+	font-family: monospace;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+#choiceTable {
+	border-right: 3px solid gray;
+	overflow: auto;
+	float: left;
+	width: calc(20vw - 3px);
+	height: 100vh;
+}
+
+#table {
+	margin-left: 15px;
+	overflow: auto;
+	width: calc(80vw - 15px);
+	height: 100vh;
+	float: left;
+}
+
+
+
