@@ -14,6 +14,7 @@
 		<title>Admin</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<?php
+			require_once("functions/upload.php");
 			require_once("functions/clear.php");
 			require_once("functions/delete.php");
 			require_once("functions/tablelist.php");
@@ -37,6 +38,12 @@
 				</br><form action="" method="POST"><input <?php if(isset($_POST["search"])) echo "value=".$_POST["search"]; ?> placeholder="Поиск по таблице" name="search" type="search"><input type="submit" value="Найти"></form>
 				</br><form method="POST"><input name="clear" value="Очистить таблицу" type="submit"></form>
 			<?php }; ?>
+
+			<form action="" method="POST" enctype="multipart/form-data">
+				<input placeholder="Относительный путь" type="text" name="puth">
+				<input type="file" name="image"></br>
+				<input type="submit">
+			</form>
 
 			</br><form method="POST"><input value="Выйти" name="exit" type="submit"></form>
 
